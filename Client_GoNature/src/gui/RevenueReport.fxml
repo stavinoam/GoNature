@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="reportTitle" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutY="20.0" prefHeight="37.0" prefWidth="700.0" text="GoNature" textAlignment="CENTER" textFill="#6aa84f">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <Label fx:id="reportTitle1" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutY="67.0" prefHeight="29.0" prefWidth="700.0" text="Revenue report" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="reportDate" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutY="97.0" prefHeight="30.0" prefWidth="700.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="235.0" text="Park name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="235.0" text="Total visitors">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="235.0" text="Total revenue">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="park_name" layoutX="129.0" layoutY="286.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalVisitors" alignment="CENTER" layoutX="306.0" layoutY="286.0" prefHeight="27.0" prefWidth="78.0" text="-">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalIncome" alignment="CENTER" layoutX="509.0" layoutY="286.0" prefWidth="78.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="1.0" layoutX="204.0" layoutY="262.0" startX="-100.0" />
+      <Line endX="31.0" layoutX="372.0" layoutY="262.0" startX="-86.0" />
+      <Line endX="40.0" layoutX="568.0" layoutY="262.0" startX="-81.0" />
+      <JFXButton fx:id="btnBack" buttonType="RAISED" focusTraversable="false" layoutX="332.0" layoutY="425.0" onAction="#back" style="-fx-background-color: #f1f1f1;" text="Back" textAlignment="CENTER" />
+      <Line endX="315.0" layoutX="352.0" layoutY="130.0" startX="-329.0" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

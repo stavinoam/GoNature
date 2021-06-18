@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER_LEFT" layoutY="16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="SuccessfullyBookTitle" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="90.0" prefWidth="700.0" text="Successfully booked for a visit!" textAlignment="CENTER" textFill="#6aa84f">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label text="You will use the order number at the entrance to the park" textFill="#fd0000">
+               <VBox.margin>
+                  <Insets left="135.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="211.0" prefWidth="453.0" style="-fx-border-color: green;">
+               <children>
+                  <VBox prefHeight="178.0" prefWidth="190.0">
+                     <children>
+                        <Label fx:id="lblOrderNumber" text="Order number:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lblPark" text="Park:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lblDate" text="Date:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lblTime" text="Time:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lblVisitorNumber" text="Visitors number:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lblPrice" text="Total Price:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="186.0">
+                     <children>
+                        <TextField fx:id="fldOrderNum" alignment="CENTER" editable="false" prefHeight="34.0" prefWidth="184.0" style="-fx-border-color: green;">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="fieldParkName" alignment="CENTER" editable="false" prefHeight="34.0" prefWidth="184.0" style="-fx-border-color: green;">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="fieldOrderDate" alignment="CENTER" editable="false" prefHeight="34.0" prefWidth="184.0" style="-fx-border-color: green;">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="fieldOrderTime" alignment="CENTER" editable="false" prefHeight="34.0" prefWidth="184.0" style="-fx-border-color: green;">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="fieldVisitorsNumber" alignment="CENTER" editable="false" prefHeight="34.0" prefWidth="184.0" style="-fx-border-color: green;">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="fieldPrice" alignment="CENTER" editable="false" prefHeight="34.0" prefWidth="184.0" style="-fx-border-color: green;">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="130.0" right="130.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="120.0" prefWidth="700.0">
+               <children>
+                  <JFXButton fx:id="btnMyOrderList" buttonType="RAISED" onAction="#orderList" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #009e0f; -fx-border-color: grey; -fx-background-radius: 7; -fx-border-radius: 7;" text="My order list" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btnBookAnotherVisit" buttonType="RAISED" onAction="#BookANewVisit" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #76a5af; -fx-border-color: grey; -fx-background-radius: 7; -fx-border-radius: 7;" text="Book another visit" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

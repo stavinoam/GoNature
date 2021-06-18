@@ -1,0 +1,85 @@
+.root {
+	-fx-background-image: url("bg_green.jpg");
+	-fx-background-repeat: stretch;   
+    -fx-background-size: 441 416;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+#btnConnect {
+    -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btnConnect:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #f2f2f2 0%, #c6c6c6 100%),
+        #fcfcfc,
+        #f6f6f6,
+        radial-gradient(center 50% 50%, radius 100%, #fcfcfc, #f4f4f4);
+}
+#btnConnect:pressed {
+    -fx-padding: 5 5 5 5;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+#btnConnect Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+#btnCardReader {
+    -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btnCardReader:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #f2f2f2 0%, #c6c6c6 100%),
+        #fcfcfc,
+        #f6f6f6,
+        radial-gradient(center 50% 50%, radius 100%, #fcfcfc, #f4f4f4);
+}
+#btnCardReader:pressed {
+    -fx-padding: 5 5 5 5;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+#btnCardReader Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+
+#btnExit {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+#btnExit:pressed {
+    -fx-padding: 5 5 5 5;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#connectionStatus {
+    -fx-font: bold italic 12pt "Arial";
+    -fx-text-fill:black;   
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.3) , 10, 0.0 , 0 , 1 );
+    
+}
+
+#serverTitle {
+    -fx-font: bold 20pt "Arial";
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.2) , 10 , 0.0 , 0 , 1 );
+    
+}

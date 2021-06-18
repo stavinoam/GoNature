@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="bookvisittitle" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="90.0" prefWidth="700.0" text="Book a visit" textAlignment="CENTER" textFill="#6aa84f">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="fillfieldslabel" alignment="BASELINE_CENTER" contentDisplay="CENTER" text="Please fill all the fields">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="130.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="291.0" prefWidth="500.0" style="-fx-border-color: #38761D; -fx-border-width: 3px 3px 3px 3px;">
+               <children>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="464.0">
+                     <children>
+                        <Label fx:id="parklabel" prefHeight="20.0" prefWidth="140.0" text="Choose a park">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="parkNameCombo" prefHeight="40.0" prefWidth="190.0" promptText="Park Name" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Hyperlink fx:id="linkOurParks" onAction="#goToOurParksPage" text="Our parks" underline="true">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Hyperlink>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="datelabel" prefHeight="20.0" prefWidth="140.0" text="Choose a date">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="datefield" prefHeight="35.0" prefWidth="190.0" promptText="     /     /" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="36.0" prefWidth="451.0">
+                     <children>
+                        <Label fx:id="timelabel" prefHeight="20.0" prefWidth="140.0" text="Choose traveling time">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="timeSlotCombo" prefHeight="35.0" prefWidth="190.0" promptText="Traveling time" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="31.0" prefWidth="503.0">
+                     <children>
+                        <Label fx:id="lblPhone" prefHeight="20.0" prefWidth="119.0" text="Phone number">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="31.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="phoneCombo" prefHeight="25.0" prefWidth="64.0" promptText="050">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <TextField fx:id="fldPhone" prefHeight="29.0" prefWidth="115.0" promptText="7 digits" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="10.0" top="2.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="34.0" prefWidth="352.0">
+                     <children>
+                        <Label fx:id="emaillabel" prefHeight="20.0" prefWidth="140.0" text="Email">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="emailfield" alignment="BASELINE_LEFT" prefHeight="35.0" prefWidth="190.0" promptText="example123@gmail.com" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="27.0" prefWidth="434.0">
+                     <children>
+                        <Label fx:id="instructorlabel" prefHeight="20.0" prefWidth="140.0" text="Instructor">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <RadioButton fx:id="noRadioButton" mnemonicParsing="false" selected="true" text="No">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="yesRadioButton" mnemonicParsing="false" text="Yes">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="visitorsnumlabel" prefHeight="20.0" prefWidth="140.0" text="Number of visitors">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Spinner fx:id="spnNumberOfVisitors" prefHeight="25.0" prefWidth="57.0">
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin>
+                        </Spinner>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="700.0">
+               <children>
+                  <JFXButton fx:id="btnContinue" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#sendOrderRequest" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #6AA84F; -fx-border-color: grey; -fx-background-radius: 7; -fx-border-radius: 7;" text="Book" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="150.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btnBack" buttonType="RAISED" onAction="#back" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #9fc5f8; -fx-border-color: grey; -fx-background-radius: 7; -fx-border-radius: 7;" text="Back" textFill="#160d39">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane mouseTransparent="true" prefHeight="470.0" prefWidth="700.0">
+         <children>
+            <HBox fx:id="circles" alignment="CENTER" prefHeight="470.0" prefWidth="700.0" visible="false">
+               <children>
+                  <Circle fx:id="circle1" fill="#1f93ff00" radius="10.0" stroke="#64cde4" strokeType="INSIDE" strokeWidth="6.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <Circle fx:id="circle2" fill="#1f93ff00" radius="10.0" stroke="#d9455b" strokeType="INSIDE" strokeWidth="6.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <Circle fx:id="circle3" fill="#1f93ff00" radius="10.0" stroke="#4ed7c4" strokeType="INSIDE" strokeWidth="6.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Circle>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

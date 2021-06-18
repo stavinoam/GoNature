@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="UnfortunatelyTitle" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="71.0" prefWidth="700.0" text="Unfortunately, the date you picked is already full..." textAlignment="CENTER" textFill="#274e13">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="sad" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" prefHeight="70.0" prefWidth="70.0" />
+            <HBox alignment="CENTER" prefHeight="281.0" prefWidth="700.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="309.0" prefWidth="323.0">
+                     <children>
+                        <Label fx:id="lblPick" text="Pick another date of the available dates of the park:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tblAvailableDates" focusTraversable="false" prefHeight="208.0" prefWidth="303.0">
+                           <columns>
+                              <TableColumn fx:id="clmnDate" prefWidth="98.66665649414062" style="-fx-alignment: center;" text="Date" />
+                              <TableColumn fx:id="clmnTime" prefWidth="113.0" style="-fx-alignment: center;" text="Time slots" />
+                              <TableColumn fx:id="clmnPick" prefWidth="74.33331298828125" style="-fx-alignment: center;" text="Pick" />
+                           </columns>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="15.0" />
+                           </VBox.margin>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="220.0" prefWidth="319.0">
+                     <children>
+                        <Label fx:id="lblWaitingList" text="Sign up for a waiting list for the day you picked">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btnWaitingList" alignment="CENTER" buttonType="RAISED" onAction="#addToWaitingList" prefHeight="35.0" style="-fx-background-color: #29967d; -fx-border-color: grey; -fx-background-radius: 7; -fx-border-radius: 7;" text="Join the waiting list" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <Label fx:id="lblNotifying" text="When the date will be available we will notify you" textFill="#35a14b">
+                           <VBox.margin>
+                              <Insets top="18.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

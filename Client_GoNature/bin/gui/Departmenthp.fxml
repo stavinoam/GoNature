@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="bookvisittitle" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutY="31.0" prefHeight="89.0" prefWidth="700.0" text="Home" textAlignment="CENTER" textFill="#6aa84f">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnCreateReport" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" layoutX="146.0" layoutY="180.0" onAction="#gotoCreateReport" prefHeight="65.0" prefWidth="182.0" style="-fx-background-color: #f1f1f1; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-color: silver;" text="Create a report" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="AREA_CHART" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnConfirmation" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" layoutX="378.0" layoutY="180.0" onAction="#gotoConfirmation" prefHeight="65.0" prefWidth="182.0" style="-fx-background-color: #f1f1f1; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-color: silver;" text="Settings confirmation">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="CHECK_CIRCLE" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <AnchorPane layoutX="12.0" layoutY="278.0" prefHeight="164.0" prefWidth="675.0" style="-fx-border-color: grey; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="528.0" layoutY="50.0" text="Hai park">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="451.0" layoutY="70.0" prefHeight="84.0" prefWidth="205.0" style="-fx-background-color: rgba(199, 204, 204, 0.6); -fx-border-color: grey; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="6.0" prefHeight="39.0" prefWidth="208.0">
+                     <children>
+                        <Label text="Current visitors" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldNumVisitorsHaiPark" alignment="CENTER" editable="false" prefHeight="27.0" prefWidth="60.0" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="43.0" prefHeight="39.0" prefWidth="208.0">
+                     <children>
+                        <Label prefWidth="120.0" text="Current spares" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldNumSparesHaiPark" alignment="CENTER" editable="false" prefWidth="60.0" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Label layoutX="308.0" layoutY="50.0" text="Hatzbani">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="233.0" layoutY="70.0" prefHeight="84.0" prefWidth="205.0" style="-fx-background-color: rgba(199, 204, 204, 0.6); -fx-border-color: grey; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="6.0" prefHeight="39.0" prefWidth="208.0">
+                     <children>
+                        <Label text="Current visitors" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldNumVisitorsHatzbani" alignment="CENTER" editable="false" prefHeight="27.0" prefWidth="60.0" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="43.0" prefHeight="39.0" prefWidth="208.0">
+                     <children>
+                        <Label prefWidth="120.0" text="Current spares" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldNumSparesHatzbani" alignment="CENTER" editable="false" prefWidth="60.0" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Label layoutX="98.0" layoutY="50.0" text="Banias">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="17.0" layoutY="70.0" prefHeight="84.0" prefWidth="205.0" style="-fx-background-color: rgba(199, 204, 204, 0.6); -fx-border-color: grey; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="6.0" prefHeight="39.0" prefWidth="208.0">
+                     <children>
+                        <Label text="Current visitors" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldNumVisitorsBanias" alignment="CENTER" editable="false" prefHeight="27.0" prefWidth="60.0" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="43.0" prefHeight="39.0" prefWidth="208.0">
+                     <children>
+                        <Label prefWidth="120.0" text="Current spares" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldNumSparesBanias" alignment="CENTER" editable="false" prefWidth="60.0" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <FontAwesomeIconView fx:id="iconRefresh" glyphName="REFRESH" layoutX="325.0" layoutY="40.0" onMouseClicked="#refreshNumbers" size="2.5em" text="" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

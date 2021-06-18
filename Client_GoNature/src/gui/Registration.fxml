@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER_LEFT" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="registrationTitle" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="700.0" text="Registration" textAlignment="CENTER" textFill="#6aa84f">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="fillfieldslabel" alignment="BASELINE_CENTER" contentDisplay="CENTER" text="Please fill all the fields">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="170.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="291.0" prefWidth="420.0" style="-fx-border-color: #38761D; -fx-border-width: 3px 3px 3px 3px; -fx-background-color: #ffffff;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="parklabel" prefHeight="20.0" prefWidth="108.0" text="First name">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldFname" prefHeight="29.0" prefWidth="160.0" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" right="43.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="datelabel" prefHeight="20.0" prefWidth="108.0" text="Last name">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldLname" prefHeight="29.0" prefWidth="160.0" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" right="43.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="timelabel" prefHeight="20.0" prefWidth="108.0" text="ID number">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldID" prefHeight="29.0" prefWidth="160.0" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" right="43.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="352.0">
+                     <children>
+                        <Label fx:id="emaillabel1" prefHeight="20.0" prefWidth="108.0" text="Phone number">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="comboPhone" prefHeight="25.0" prefWidth="64.0" promptText="050" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <TextField fx:id="fldPhone" prefHeight="29.0" prefWidth="89.0" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" right="43.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="352.0">
+                     <children>
+                        <Label fx:id="emaillabel" prefHeight="20.0" prefWidth="108.0" text="Email">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldEmail" prefHeight="29.0" prefWidth="160.0" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" right="43.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="352.0">
+                     <children>
+                        <Label fx:id="emaillabel2" prefHeight="20.0" prefWidth="103.0" text="Visitors number">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Spinner fx:id="spnVisitorsNum" prefHeight="25.0" prefWidth="57.0">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Spinner>
+                        <Label text="Change for subscriber only!" textFill="RED">
+                           <HBox.margin>
+                              <Insets left="7.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="17.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="140.0" right="140.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="700.0">
+               <children>
+                  <JFXButton fx:id="btnSignupSub" onAction="#signUpSubscriber" prefHeight="30.0" style="-fx-background-color: #45818e; -fx-border-color: grey; -fx-background-radius: 7px; -fx-border-radius: 7px;" text="Sign up as a subscriber" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSignupInst" onAction="#signUpInstructor" prefHeight="30.0" style="-fx-background-color: #45818e; -fx-border-color: grey; -fx-background-radius: 7px; -fx-border-radius: 7px;" text="Sign up as an instructor" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="700.0">
+               <children>
+                  <JFXButton fx:id="btnCancel" onAction="#cancel" style="-fx-background-color: #cf2a27; -fx-border-color: grey; -fx-background-radius: 7px; -fx-border-radius: 7px;" text="Clear" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

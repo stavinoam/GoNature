@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="reportTitle" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutY="20.0" prefHeight="37.0" prefWidth="700.0" text="GoNature" textAlignment="CENTER" textFill="#6aa84f">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="reportTitle1" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutY="67.0" prefHeight="29.0" prefWidth="700.0" text="Visitors report" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="reportDate" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="220.0" layoutY="97.0" prefHeight="30.0" prefWidth="281.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="park_name" layoutX="129.0" layoutY="286.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" focusTraversable="false" layoutX="332.0" layoutY="425.0" onAction="#back" style="-fx-background-color: #f1f1f1;" text="Back" textAlignment="CENTER" />
+      <Line endX="315.0" layoutX="352.0" layoutY="130.0" startX="-329.0" />
+      <ComboBox fx:id="comboDays" layoutX="100.0" layoutY="100.0" prefHeight="25.0" prefWidth="71.0" promptText="Day" style="-fx-border-color: black;" />
+      <Label layoutX="10.0" layoutY="103.0" text="Choose a day:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="go" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="175.0" layoutY="93.0" onAction="#goToSpecificDay" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: #d1dbdb; -fx-border-color: silver; -fx-border-radius: 7px; -fx-background-radius: 7px;" text="Go">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <AnchorPane fx:id="root" layoutX="5.0" layoutY="131.0" prefHeight="284.0" prefWidth="689.0">
+         <children>
+            <BarChart fx:id="visitorsChart" prefHeight="284.0" prefWidth="422.0" title="Enter time">
+              <xAxis>
+                <CategoryAxis label="HOUR" side="BOTTOM" fx:id="x">
+                     <tickLabelFont>
+                        <Font size="15.0" />
+                     </tickLabelFont>
+                  </CategoryAxis>
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="y" side="LEFT">
+                     <tickLabelFont>
+                        <Font size="15.0" />
+                     </tickLabelFont>
+                  </NumberAxis>
+              </yAxis>
+            </BarChart>
+            <BarChart fx:id="avgTime" layoutX="422.0" prefHeight="284.0" prefWidth="265.0" title="Average visit time">
+              <xAxis>
+                <CategoryAxis label="Type" side="BOTTOM">
+                     <tickLabelFont>
+                        <Font size="12.0" />
+                     </tickLabelFont>
+                  </CategoryAxis>
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT">
+                     <tickLabelFont>
+                        <Font size="14.0" />
+                     </tickLabelFont>
+                  </NumberAxis>
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

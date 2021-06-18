@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="registrationTitle" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="91.0" prefWidth="700.0" text="Successfully registered to the system!" textAlignment="CENTER" textFill="#274e13">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="121.0" prefWidth="700.0">
+               <children>
+                  <Label fx:id="smiley" prefHeight="100.0" prefWidth="100.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="61.0" prefWidth="700.0">
+               <children>
+                  <Label fx:id="lblSubscriberNumber" text="Subscriber number">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fldSubNum" alignment="CENTER" editable="false" focusTraversable="false" prefHeight="34.0" prefWidth="121.0" style="-fx-border-color: green;">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="120.0" prefWidth="700.0">
+               <children>
+                  <JFXButton fx:id="btnRegisterSubscriber" onAction="#registerSubcriber" prefHeight="35.0" style="-fx-background-color: #009e0f; -fx-border-color: grey; -fx-background-radius: 7px; -fx-border-radius: 7px;" text="Register another user" textAlignment="CENTER" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

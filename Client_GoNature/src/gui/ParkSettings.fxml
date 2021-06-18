@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="700.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="lblSettings" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="90.0" prefWidth="700.0" text="Park settings" textAlignment="CENTER" textFill="#6aa84f">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="251.0" prefWidth="422.0" style="-fx-border-color: #38761D; -fx-border-width: 3px 3px 3px 3px; -fx-background-color: #ffffff;">
+               <children>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="lblCapacity" prefHeight="20.0" prefWidth="150.0" text="Park capacity">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtCapacity" focusTraversable="false" prefHeight="25.0" prefWidth="65.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="visitors">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="lblSpares" prefHeight="20.0" prefWidth="150.0" text="Park spares">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtSpares" focusTraversable="false" prefHeight="25.0" prefWidth="65.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="visitors">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="lblTravelTime" prefHeight="20.0" prefWidth="150.0" text="Traveling time">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtTravelingTime" focusTraversable="false" prefHeight="25.0" prefWidth="65.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="h">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="BASELINE_LEFT" prefHeight="34.0" prefWidth="352.0">
+                     <children>
+                        <Label fx:id="lblDiscount" prefHeight="20.0" prefWidth="150.0" text="Discount amount">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtDiscount" focusTraversable="false" prefHeight="25.0" prefWidth="65.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="\%">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="170.0" right="170.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="700.0">
+               <children>
+                  <JFXButton fx:id="btnSend" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" focusTraversable="false" onAction="#sendSettingsToDepartmentManager" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #b6d7a8; -fx-background-radius: 7; -fx-border-color: grey; -fx-border-radius: 7;" text="Send" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCancel" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" focusTraversable="false" onAction="#backToWorkerHomePage" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #9fc5f8; -fx-background-radius: 7; -fx-border-color: grey; -fx-border-radius: 7;" text="Back" textAlignment="CENTER" textFill="#160d39">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="47.0" prefWidth="700.0">
+               <children>
+                  <JFXButton fx:id="btnSettingsStatus" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" onAction="#goToSettingsStatus" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: #76a5af; -fx-border-color: grey; -fx-background-radius: 7px; -fx-border-radius: 7px;" text="Settings status" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="700.0" />
+         </children>
+      </VBox>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

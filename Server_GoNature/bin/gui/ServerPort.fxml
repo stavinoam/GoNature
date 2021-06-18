@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="416.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServerPortFrameController">
+   <children>
+      <Button fx:id="btnExit" layoutX="189.0" layoutY="377.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="25.0" prefWidth="50.0" text="Exit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="serverTitle" layoutX="178.0" layoutY="22.0" text="Server">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <TextField fx:id="txtPort" alignment="CENTER" layoutX="84.0" layoutY="111.0" prefHeight="25.0" prefWidth="260.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblEnterPort" alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="80.0" prefHeight="17.0" prefWidth="260.0" text="Enter connection port:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <VBox alignment="CENTER" layoutX="41.0" layoutY="256.0" prefHeight="108.0" prefWidth="360.0" style="-fx-border-color: black; -fx-border-radius: 25px; -fx-border-width: 2px;">
+         <children>
+            <Label fx:id="connectionStatus" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="260.0" text="Connection Status:">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <TextField fx:id="txtConStatus" alignment="CENTER" prefHeight="39.0" prefWidth="303.0" text="Not Connected">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin></TextField>
+         </children>
+      </VBox>
+      <Button fx:id="btnConnect" alignment="CENTER" contentDisplay="CENTER" layoutX="149.0" layoutY="164.0" mnemonicParsing="false" onAction="#connectToPort" style="-fx-background-color: #f6f6f6; -fx-border-color: silver; -fx-backgroud-radius: 7; -fx-border-radius: 7;" text="Connect to server" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCardReader" layoutX="166.0" layoutY="213.0" mnemonicParsing="false" onAction="#goToCardReader" style="-fx-background-color: #dedddd; -fx-border-color: silver; -fx-background-radius: 7; -fx-border-radius: 7;" text="Card Reader" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

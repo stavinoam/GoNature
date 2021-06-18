@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginPageController">
+   <children>
+      <JFXHamburger fx:id="menu" layoutX="659.0" layoutY="7.0" />
+      <JFXButton fx:id="btnTravelerLogin" alignment="CENTER" focusTraversable="false" layoutX="295.0" layoutY="157.0" onAction="#travelerLogin" prefWidth="96.0" ripplerFill="#423d3db8" style="-fx-text-fill: white; -fx-font-size: 16px; -fx-background-color: linear-gradient( #6AA84F, #1e431f);" text="Traveler" textAlignment="CENTER" />
+      <JFXButton fx:id="btnIdLogin" alignment="CENTER" focusTraversable="false" layoutX="394.0" layoutY="157.0" onAction="#idLogin" prefWidth="96.0" ripplerFill="#423d3db8" style="-fx-text-fill: white; -fx-font-size: 16px; -fx-background-color: linear-gradient( #6AA84F, #1e431f);" text="Subscriber" textAlignment="CENTER" />
+      <JFXButton fx:id="btnInstructorLogin" alignment="CENTER" focusTraversable="false" layoutX="493.0" layoutY="157.0" onAction="#instructorLogin" prefWidth="96.0" ripplerFill="#423d3db8" style="-fx-background-color: linear-gradient( #6AA84F, #1e431f); -fx-text-fill: white; -fx-font-size: 16px;" text="Instructor" textAlignment="CENTER" />
+      <JFXButton fx:id="btnWorkerLogin" alignment="CENTER" focusTraversable="false" layoutX="592.0" layoutY="157.0" onAction="#workerLogin" prefWidth="96.0" ripplerFill="#423d3db8" style="-fx-background-color: linear-gradient( #6AA84F, #1e431f); -fx-text-fill: white; -fx-font-size: 16px;" text="Worker" textAlignment="CENTER" />
+      <Pane prefHeight="470.0" prefWidth="282.0" style="-fx-background-color: #6aa84f;">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="260.0" layoutX="11.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@css/GoNature.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView fill="WHITE" glyphName="PAGELINES" layoutX="102.0" layoutY="209.0" size="100">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </FontAwesomeIconView>
+         </children>
+      </Pane>
+      <Label layoutX="419.0" layoutY="104.0" style="-fx-text-fill: #6aa84f;" text="WELCOME" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchor" layoutX="295.0" layoutY="194.0" prefHeight="230.0" prefWidth="393.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Pane prefHeight="230.0" prefWidth="393.0">
+               <children>
+                  <JFXTextField fx:id="fldID" focusColor="#09b6bc" layoutX="89.0" layoutY="102.0" prefHeight="39.0" prefWidth="218.0" promptText="ID number">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="155.0" layoutY="169.0" onAction="#login" prefHeight="47.0" prefWidth="86.0" ripplerFill="WHITE" style="-fx-background-color: #6aa84f;" text="Login" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="14.0" prefHeight="15.0" prefWidth="280.0" text="Traveler Login" textAlignment="CENTER" textFill="#1e7222">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <FontAwesomeIconView fill="#82977d" glyphName="KEY" layoutX="58.0" layoutY="133.0" size="2em" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="#1e431f" glyphName="USERS" layoutX="453.0" layoutY="84.0" size="75" text="" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="58.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="140.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DrawerController">
+   <children>
+      <JFXButton accessibleText="home" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" prefHeight="67.0" prefWidth="182.0" ripplerFill="#147e4a" style="-fx-background-color: #f1f1f1;" text="Home">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <graphic>
+            <FontAwesomeIconView glyphName="HOME" size="25" />
+         </graphic></JFXButton>
+      <JFXButton accessibleText="price" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" prefHeight="67.0" prefWidth="180.0" ripplerFill="#147e4a" style="-fx-background-color: #f1f1f1;" text="Price list">
+         <graphic>
+            <FontAwesomeIconView glyphName="SHEKEL" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXButton accessibleText="ourparks" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" prefHeight="67.0" prefWidth="182.0" ripplerFill="#147e4a" style="-fx-background-color: #f1f1f1;" text="Our Parks">
+         <graphic>
+            <FontAwesomeIconView glyphName="LEAF" size="25" />
+         </graphic></JFXButton>
+      <JFXButton accessibleText="aboutus" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" prefHeight="67.0" prefWidth="182.0" ripplerFill="#147e4a" style="-fx-background-color: #f1f1f1;" text="About Us">
+         <graphic>
+            <FontAwesomeIconView glyphName="INFO" size="25" />
+         </graphic></JFXButton>
+      <JFXButton accessibleText="signout" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" prefHeight="67.0" prefWidth="180.0" ripplerFill="#147e4a" style="-fx-background-color: #f1f1f1;" text="Sign out">
+         <graphic>
+            <FontAwesomeIconView glyphName="SIGN_OUT" size="25" />
+         </graphic></JFXButton>
+   </children>
+</VBox>

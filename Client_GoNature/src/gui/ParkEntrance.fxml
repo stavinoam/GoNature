@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="lblParkInfoTitle" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="89.0" prefWidth="700.0" text="Welcome to GoNature system" textAlignment="CENTER" textFill="#6aa84f">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="91.0" prefWidth="530.0" style="-fx-background-color: rgba(199, 204, 204, 0.6); -fx-border-color: grey;">
+               <VBox.margin>
+                  <Insets left="85.0" right="85.0" />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="6.0" prefHeight="39.0" prefWidth="458.0">
+                     <children>
+                        <Label text="Current number of visitors" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldCurrentNumOfVisitors" alignment="CENTER" editable="false" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="43.0" prefHeight="39.0" prefWidth="458.0">
+                     <children>
+                        <Label prefWidth="209.0" text="Current number of spares" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldCurrentParkSpares" alignment="CENTER" editable="false" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <FontAwesomeIconView fx:id="iconRefresh" glyphName="REFRESH" layoutX="467.0" layoutY="53.0" onMouseClicked="#refreshNumbers" size="2.5em" />
+               </children>
+            </AnchorPane>
+            <VBox alignment="CENTER" prefHeight="193.0" prefWidth="530.0" style="-fx-border-color: black; -fx-background-color: #ffffff;">
+               <VBox.margin>
+                  <Insets left="85.0" right="85.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="560.0">
+                     <children>
+                        <Label text="Enter order number" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldOrderNumber" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <JFXButton fx:id="btnSearch" contentDisplay="CENTER" onAction="#searchOrder" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #93c47d;" text="Search">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="560.0">
+                     <children>
+                        <Label prefWidth="157.0" text="Number of visitors">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldNumOfVisitors" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <JFXButton fx:id="btnEdit" contentDisplay="CENTER" onAction="#editOrder" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #f82f3d;" text="Edit" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="560.0">
+                     <children>
+                        <Label prefWidth="157.0" text="Price" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldPrice" editable="false" style="-fx-border-color: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="700.0">
+               <children>
+                  <Label text="Click here only if there is no order" textFill="#8c659e">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXButton fx:id="btnBookAVisit" onAction="#gotoBookAVisit" style="-fx-background-color: #9fc5f8; -fx-border-color: black; -fx-border-radius: 5px;" text="Book a visit" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="170.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

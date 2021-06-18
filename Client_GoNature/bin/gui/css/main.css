@@ -1,0 +1,73 @@
+#smiley {          
+    -fx-graphic: url("/gui/css/smiley.png");
+    -fx-graphic-text-gap: 10;
+}
+
+.jfx-hamburger StackPane {
+	-fx-background-color: #12422a;
+}
+
+#lblVisa {          
+    -fx-graphic: url("/gui/css/visa.png");
+    -fx-graphic-text-gap : 10;
+}
+
+#lblMastercard {          
+    -fx-graphic: url("/gui/css/mastercard.png");
+    -fx-graphic-text-gap : 10;
+}
+
+#lblExpress {          
+    -fx-graphic: url("/gui/css/american_express.png");
+    -fx-graphic-text-gap : 10;
+}
+
+#lblDinners {          
+    -fx-graphic: url("/gui/css/dinners.png");
+    -fx-graphic-text-gap : 10;
+}
+
+#lblRegistration {
+	-fx-background-image: url("/gui/css/registration.png");
+    -fx-background-size: 25 25;
+}
+
+#lblParkInfo {
+	-fx-background-image: url("/gui/css/info.png");
+    -fx-background-size: 25 25;
+}
+
+#lblParkSettings {
+	-fx-background-image: url("/gui/css/settings.png");
+    -fx-background-size: 25 25;
+}
+
+#lblReport {
+	-fx-background-image: url("/gui/css/report.png");
+	-fx-background-size: 25 25;
+}
+
+#lblConfirmation {
+	-fx-background-image: url("/gui/css/confirmation.png");
+    -fx-background-size: 25 25;
+}
+
+#home {
+	-fx-background-image: url("/gui/css/home.png");
+    -fx-background-size: 25 25;
+}
+
+#tree {
+	-fx-background-image: url("/gui/css/tree.png");
+    -fx-background-size: 25 25;
+}
+
+#about {
+	-fx-background-image: url("/gui/css/about.png");
+    -fx-background-size: 25 25;
+}
+
+#close {
+	-fx-background-image: url("/gui/css/close.png");
+    -fx-background-size: 25 25;
+}

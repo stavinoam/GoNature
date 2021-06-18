@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="registrationTitle" alignment="BASELINE_CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="700.0" text="Registration - Payment" textAlignment="CENTER" textFill="#6aa84f">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="35.0" prefWidth="700.0">
+               <children>
+                  <Label fx:id="fillfieldslabel" alignment="BASELINE_CENTER" contentDisplay="CENTER" text="Choose payment method:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="fillfieldslabel1" alignment="BASELINE_CENTER" contentDisplay="CENTER" style="-fx-text-fill: red;" text="(Optional)">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="77.0" prefWidth="540.0" style="-fx-border-color: #38761D; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: #ffffff;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="80.0" right="80.0" />
+               </VBox.margin>
+               <children>
+                  <RadioButton fx:id="radioVisa" mnemonicParsing="false" prefWidth="22.0" />
+                  <Label fx:id="lblVisa" prefHeight="38.0" prefWidth="54.0" />
+                  <RadioButton fx:id="radioMastercard" mnemonicParsing="false" prefWidth="22.0">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <Label fx:id="lblMastercard" prefHeight="38.0" prefWidth="54.0" />
+                  <RadioButton fx:id="radioExpress" mnemonicParsing="false" prefWidth="22.0">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <Label fx:id="lblExpress" prefHeight="38.0" prefWidth="54.0" />
+                  <RadioButton fx:id="radioDinners" mnemonicParsing="false" prefWidth="22.0">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <Label fx:id="lblDinners" prefHeight="38.0" prefWidth="54.0" />
+               </children>
+            </HBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="185.0" prefWidth="540.0" style="-fx-border-color: #38761D; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: #ffffff;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="timelabel" prefHeight="20.0" prefWidth="108.0" text="Card number">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldCard1" prefHeight="29.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="fldCard2" prefHeight="29.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="fldCard3" prefHeight="29.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="fldCard4" prefHeight="29.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="40.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="352.0">
+                     <children>
+                        <Label fx:id="emaillabel1" prefHeight="20.0" prefWidth="108.0" text="Exipry date">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="comboMonth" prefHeight="29.0" prefWidth="72.0" promptText="mm">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <ComboBox fx:id="comboYear" prefHeight="29.0" prefWidth="78.0" promptText="yyyy">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="40.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="352.0">
+                     <children>
+                        <Label fx:id="emaillabel" prefHeight="20.0" prefWidth="30.0" text="CVV">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Hyperlink fx:id="question_mark" alignment="CENTER" contentDisplay="CENTER" onAction="#cvvExplain" prefHeight="26.0" prefWidth="26.0" style="-fx-border-color: black; -fx-border-radius: 50px;" text="?" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Hyperlink>
+                        <TextField fx:id="fldCVV" prefHeight="29.0" prefWidth="68.0" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="56.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="40.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="352.0">
+                     <children>
+                        <Label fx:id="emaillabel2" prefHeight="20.0" prefWidth="108.0" text="Card owner">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fldID" prefHeight="29.0" prefWidth="115.0" promptText="ID" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="fldName" prefHeight="29.0" prefWidth="115.0" promptText="Full name" style="-fx-border-color: black; -fx-border-width: 2 2 2 2;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="40.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="80.0" right="80.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="700.0">
+               <children>
+                  <JFXButton fx:id="btnFinish" alignment="CENTER" onAction="#finish" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #6AA84F; -fx-border-color: grey; -fx-background-radius: 7px; -fx-border-radius: 7px;" text="Finish" textAlignment="CENTER" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnContinue" onAction="#gotoRegistrationSuccess" prefHeight="35.0" style="-fx-background-color: #9fc5f8; -fx-border-color: grey; -fx-background-radius: 7px; -fx-border-radius: 7px;" text="Continue without credit card" textAlignment="CENTER" textFill="#2b2a33">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXHamburger fx:id="menu" layoutX="656.0" layoutY="4.0" prefWidth="30.0" />
+      <AnchorPane fx:id="drawerpane" layoutX="560.0" layoutY="52.0" mouseTransparent="true" prefHeight="366.0" prefWidth="140.0">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="140.0" direction="RIGHT" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
